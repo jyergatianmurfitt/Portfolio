@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Products</title>
+  </head>
+  <body onload="render();">
+    <div class="titles">
+      <h1 class="heading text">Chosen for you</h1>
+      <h3 class="subheading text">We think you will love these</h3>
+    </div>
+
+    <div class="overlay"><span class="exit">&#10005;</span><div class="mainPopUpContents"><div class="popUpText"><h3 class="overlayTitle text"></h3><h5 class="overlayPrice text"></h5><a class="linkBtn btn text"></a></div><img class="overlayImg"></div></div>
+
+    <div class="filterBtnContainer">
+      <button type="button" name="button" class="filtersBtn btn">Filter</button>
+    </div>
+    <div class="filtersSection">
+      <div class="filters">
+        <span class="exit exitFilters">&#10005;</span>
+        <div class="filterWrapper">
+          <button class="openFilter btn text" type="button">Search</button>
+          <div class="searchFilter">
+            <input class="searchInput" type="text" placeholder="Type something...">
+          </div>
+        </div>
+        <div class="filterWrapper">
+          <button class="price openFilter btn text" type="button">Price</button>
+          <div class="priceFilter">
+            <input class="minPrice" type="text" placeholder="From">
+            <input class="maxPrice" type="text" placeholder="To">
+            <div class="popover text">Please input a number</div>
+          </div>
+        </div>
+        <div class="filterWrapper">
+          <button class="openFilter categoryBtn btn text" type="button">Category</button>
+          <div class="categoryFilter">
+            <div class="optionsList"><div class="option text">All</div><div class="option text">Boots</div><div class="option text">Coats-Jackets</div><div class="option text">Jeans</div><div class="option text">Leggings</div><div class="option text">Nightwear</div><div class="option text">Tops</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="sectionBtns">
+        <button type="button" name="button" class="clearBtn btn">Clear All</button>
+        <button type="button" name="button" class="applyBtn btn">Apply Filters</button>
+      </div>
+    </div>
+
+    <div class="carouselSection">
+      <div class="topArrow arrow">&#9650;</div>
+      <div class="leftArrow arrow">&#10094;</div>
+      <div class="errorMsg text">We're sorry, we couldn't find what you were searching for...</div>
+      <div class="products"></div>
+      <div class="bottomArrow arrow">&#9660;</div>
+      <div class="rightArrow arrow">&#10095;</div>
+    </div>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

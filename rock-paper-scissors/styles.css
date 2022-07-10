@@ -1,0 +1,131 @@
+body {
+  background-image: url('images/space.jpg');
+  background-size: cover;
+  font-family: monospace;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 1;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 3%;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.scoreBoard {
+  background: rgba(255, 255, 255, 0.7);
+  width: 20%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding: 1%;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.player {
+  justify-content: flex-start;
+}
+
+.computer {
+  justify-content: flex-end;
+}
+
+.subheading, .textResult {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.textResult {
+  width: 30%;
+  font-size: 32px;
+  margin-top: 5%;
+  font-weight: bolder;
+}
+
+.textResult.mobile {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-size: 40px;
+  z-index: 2;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.paperObj, .scissorsObj, .paperComp, .scissorsComp {
+  margin: 0 10px;
+}
+
+.options {
+  margin-top: 10%;
+}
+
+span {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.rockObj:hover, .paperObj:hover, .scissorsObj:hover {
+  transform: scale(2);
+}
+
+.rock, .paper, .scissors {
+  height: auto;
+  width: 80px;
+  display: block;
+  margin: 15% auto;
+}
+
+.paper {
+  width: 65px;
+}
+
+@media only screen and (max-width: 680px) {
+  .scoreBoard {
+    width: 40%;
+  }
+
+  .controls {
+    display: block;
+    margin: auto;
+  }
+
+  .rockObj:hover, .paperObj:hover, .scissorsObj:hover {
+    transform: scale(1);
+  }
+}

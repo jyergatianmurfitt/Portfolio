@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+  </head>
+  <body onload='animateHome();'>
+    <nav>
+      <ul class="nav justify-content-center homeNav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contactSection">CV & Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="section1 index1">
+      <div class="container1">
+        <div class="row">
+          <div class="col-md-6 darkCol darkCol1">
+            <div class="responsiveTitles">
+              <h4 class="myName">Josephina Yergatian-Murfitt</h4>
+               <div class="titles firstTitles">
+                 <h1>Full-Stack Software Engineer</h1>
+                 <div class="slogan">
+                   <h3>With a background in Art History</h3>
+                 </div>
+               </div>
+            </div>
+            <div class="scrollHome">
+              <h6>Scroll &#8595;</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2 index1">
+      <div class="container2">
+        <div class="row">
+          <div class="col-md-6 darkCol">
+            <div class="titles secondTitles">
+              <h1 class="js-scroll">About me</h1>
+            </div>
+          </div>
+          <div class="col lightCol">
+            <div class="mainText mainText2 js-scroll">
+              <p>I'm a London-based full-stack software engineer working predominantly in
+                JS, React, MySQL, GraphQL and Node.js. My day-to-day work also requires use of DynamoDB, S3, Cloud Formation and other AWS products as well as BitBucket, version control with Git, NPM and web scraping.<br><br>I'm open to new mid-weight full-stack roles and I'd like to invest the next few years of my career in a
+                well-established company with plenty of room for growth and progression and an environment that can help me develop my skill set.<br><br>I started learning development in early 2021 by following online tutorials and since starting my latest role I have continued working indepentantly as well as in pair-programming projects so I am confident with working both in a team and self-sufficiently.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="section4 index1 contactSection"><a name="contactSection"></a>
+      <div class="container4">
+        <div class="row">
+          <div class="col-md-6 darkCol space">
+            <div class="titles thirdTitles js-scroll">
+              <h1>CV & Contact</h1>
+            </div>
+          </div>
+          <div class="col lightCol space">
+            <div class="mainText mainText3 js-scroll">
+              <h5 class="contactInfo"><a class="contactAnchor" id="email" href="mailto:jyergatianmurfitt@googlemail.com">jyergatianmurfitt@googlemail.com</a></h5>
+              <br>
+              <br>
+              <h5 class="contactInfo"><a class="contactAnchor" href="assets/CV.pdf" target="_blank" rel="noopener noreferrer">Open CV</a></h5>
+              <h5 class="contactInfo"><a class="contactAnchor" href="https://www.linkedin.com/in/josephina-yergatian-murfitt/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+              <h5 class="contactInfo"><a class="contactAnchor" href="https://github.com/jyergatianmurfitt" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="jumpButton">
+        <button class="jump"><a class="jumpAnchor" href="#top">Jump to top</a></button>
+      </div>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="https://www.linkedin.com/in/josephina-yergatian-murfitt/" target="_blank" rel="noopener noreferrer"><img class="footer-item" src="assets/linkedin.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://github.com/jyergatianmurfitt" target="_blank" rel="noopener noreferrer"><img class="footer-item" src="assets/github.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="mailto:jyergatianmurfitt@googlemail.com"><img class="footer-item" src="assets/email.png"></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+  </body>
+</html>
